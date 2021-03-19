@@ -1,0 +1,169 @@
+{
+    "produtos": [
+        {
+            "name": "Cogumelos Estufados",
+            "image": "https://image.freepik.com/fotos-gratis/deliciosos-pedacos-de-file-de-frango-com-cogumelos-e-aipo-estufado-em-cerveja-light_2829-1624.jpg",
+            "rating": 3,
+            "price": "R$12",
+            "type": "Dessert",
+            "id": 1
+          },
+          {
+            "name": "Mousse de Maracujá",
+            "image": "https://receitasdamargot.com.br/wp-content/uploads/2018/03/Mousse-de-Maracuja-Receitas-da-Margot-3-1.jpg",
+            "rating": 5,
+            "price": "R$15",
+            "type": "Dessert",
+            "id": 2
+          },
+          {
+            "name": "Macarrão espaguete",
+            "image": "https://image.freepik.com/fotos-gratis/macarrao-espaguete-almondegas-molho-de-tomate_88242-3435.jpg",
+            "rating": 4,
+            "type": "Main course",
+            "price": "R$20",
+            "id": 3
+          },
+          {
+            "name": "Carne bovina",
+            "image": "https://media.istockphoto.com/photos/grilled-beef-steaks-on-platter-picture-id476780470",
+            "rating": 2,
+            "price": "R$12",
+            "type": "Main course",
+            "id": 4
+          },
+          {
+            "name": "Filé de Peixe Grellado",
+            "image": "https://i.pinimg.com/originals/bc/c8/fe/bcc8fe7edaa56c0d9ddbff2ef89bea4f.jpg",
+            "price": "R$13",
+            "rating": 5,
+            "type": "Main course",
+            "id":5
+          },
+          {
+            "name": "Salada",
+            "image": "https://www.receiteria.com.br/wp-content/uploads/receitas-de-salada-mista-1.jpg",
+            "rating": 5,
+            "type": "Other",
+            "price": "R$13",
+            "id": 6
+          },
+          {
+            "name": "Sushi",
+            "image": "https://media.istockphoto.com/photos/set-of-sushi-and-rolls-with-salmon-and-tuna-avocado-california-maki-picture-id1066110176?k=6&m=1066110176&s=612x612&w=0&h=aD-74pTAYfFR5wQa_jGdaqa8Dzjett7Sz2vfAniSKPM=",
+            "price": "R$15",
+            "rating": 5,
+            "type": "Other",
+            "id": 7
+          }
+    ],
+    "produtos_types" :[
+        {
+            "type": "Dessert",
+            "color": "#f7931e",
+            "id":1,
+            "data": [
+              {
+                "name": "Cogumelos Estufados",
+                "image": "https://image.freepik.com/fotos-gratis/deliciosos-pedacos-de-file-de-frango-com-cogumelos-e-aipo-estufado-em-cerveja-light_2829-1624.jpg",
+                "price": "R$12",
+                "id": 1
+              },
+              {
+                "name": "Mousse de Maracujá",
+                "image": "https://receitasdamargot.com.br/wp-content/uploads/2018/03/Mousse-de-Maracuja-Receitas-da-Margot-3-1.jpg",
+                "price": "R$15",
+                "id": 2
+              }
+            ]
+          },
+          {
+            "type": "Main course",
+            "color": "#39b54a",
+            "id":2,
+            "data": [
+              {
+                "name": "Macarrão espaguete",
+                "image": "https://image.freepik.com/fotos-gratis/macarrao-espaguete-almondegas-molho-de-tomate_88242-3435.jpg",
+                "price": "R$20",
+                "id": 3
+              },
+              {
+                "name": "Carne bovina",
+                "image": "https://media.istockphoto.com/photos/grilled-beef-steaks-on-platter-picture-id476780470",
+                "price": "R$20",
+                "id": 4
+              },
+              {
+                "name": "Filé de Peixe Grellado",
+                "image": "https://i.pinimg.com/originals/bc/c8/fe/bcc8fe7edaa56c0d9ddbff2ef89bea4f.jpg",
+                "price": "R$20",
+                "id":5
+              }
+            ]
+          },
+          {
+            "type": "Other",
+            "color": "#ed1e79",
+            "id":3,
+            "data": [
+                {
+                    "name": "Salada",
+                    "image": "https://www.receiteria.com.br/wp-content/uploads/receitas-de-salada-mista-1.jpg",
+                    "price": "R$13",
+                    "id": 6
+                  },
+                  {
+                    "name": "Sushi",
+                    "image": "https://media.istockphoto.com/photos/set-of-sushi-and-rolls-with-salmon-and-tuna-avocado-california-maki-picture-id1066110176?k=6&m=1066110176&s=612x612&w=0&h=aD-74pTAYfFR5wQa_jGdaqa8Dzjett7Sz2vfAniSKPM=",
+                    "price": "R$15",
+                    "id": 7
+                  }
+            ]
+          }
+    ],
+    "comentarios": [
+    { 
+        "id": 1, 
+        "produtoId": 1,
+        "image":"https://cdn.pixabay.com/photo/2018/01/15/07/51/woman-3083383_960_720.jpg",
+        "name":"Rafaela Costa",
+        "comentario": "Recomendo, muito bom!!"
+    },
+    { 
+        "id": 2, 
+        "produtoId": 2 ,
+        "image":"https://cdn.pixabay.com/photo/2018/01/15/07/51/woman-3083383_960_720.jpg",
+        "name":"Rafaela Costa",
+        "comentario": "Recomendo, muito bom!!"
+    },
+    { 
+        "id": 3, 
+        "produtoId": 2,
+        "image":"https://cdn.pixabay.com/photo/2017/08/30/12/45/girl-2696947_960_720.jpg",
+        "name":"Rebeca Silva",
+        "comentario": "Recomendo, muito bom!!"
+    },
+    { 
+        "id": 4, 
+        "produtoId": 3,
+        "image":"https://cdn.pixabay.com/photo/2017/08/30/12/45/girl-2696947_960_720.jpg",
+        "name":"Rebeca Silva",
+        "comentario": "Recomendo, muito bom!!"
+    },
+    { 
+        "id": 5, 
+        "produtoId": 3,
+        "image":"https://cdn.pixabay.com/photo/2015/01/08/18/29/entrepreneur-593358_960_720.jpg",
+        "name":"Carlos Santos",
+        "comentario": "Recomendo, muito bom!!"
+    },
+    { 
+        "id": 6, 
+        "produtoId": 4,
+        "image":"https://cdn.pixabay.com/photo/2018/01/15/07/52/woman-3083401_960_720.jpg",
+        "name":"Jessica Santana",
+        "comentario": "Recomendo, muito bom!!"
+    }
+    ]
+  }
