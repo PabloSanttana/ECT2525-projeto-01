@@ -19,5 +19,10 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ![layout](https://github.com/PabloSanttana/ECT2525-projeto-01/blob/master/GIF/screencast-Genymotion-2021-03-19_17.33.49.674.gif)
 
+### Funcionalidade Comentários.
+
+![layout](https://github.com/PabloSanttana/ECT2525-projeto-01/blob/master/GIF/comentario.gif)
+
+
 #### Mais informação sobre React-naitve
 [React-Native](https://reactnative.dev/)
