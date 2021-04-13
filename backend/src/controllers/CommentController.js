@@ -1,4 +1,4 @@
-const comments = [
+var comments = [
   {
     id: 1,
     produtoId: 1,
@@ -50,7 +50,7 @@ const comments = [
 ];
 
 module.exports = {
-  async show(request, response) {
+  async index(request, response) {
     const { id } = request.params;
     let comentarios = [];
     comentarios = await comments.filter((item) => {
@@ -63,5 +63,46 @@ module.exports = {
       });
     }
     return response.status(200).json(comentarios);
+  },
+  async delete(request, response) {
+    const { id, idcomentario } = request.params;
+    console.log(id, idcomentario);
+    var index = comments.findIndex(
+      (comment) => comment.produtoId == id && comment.id == idcomentario
+    );
+
+    if (index === -1) {
+      return response.status(404).json({
+        message: "comment not found",
+      });
+    }
+    comments.splice(index, 1);
+
+    return response.status(200).json({ status: "delete success" });
+  },
+  async create(request, response) {
+    const { id } = request.params;
+    const { image, name, comentario, userId } = request.body;
+
+    var index = comments.findIndex((comment) => comment.produtoId == id);
+
+    if (index === -1) {
+      return response.status(404).json({
+        message: "produt not found",
+      });
+    }
+
+    const data = {
+      produtoId: Number(id),
+      image,
+      name,
+      comentario,
+      id: comments.length + 1,
+      userId,
+    };
+
+    comments.push(data);
+
+    return response.status(200).json(comments);
   },
 };

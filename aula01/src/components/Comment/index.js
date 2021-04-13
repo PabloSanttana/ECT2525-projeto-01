@@ -1,9 +1,9 @@
 import React from "react";
-import { View, Text, Image } from "react-native";
+import { View, Text, Image, Button } from "react-native";
 
 import styles from "./styles";
 
-export default function index({ data }) {
+export default function index({ data, handleDelete }) {
   return (
     <View style={styles.container}>
       <View style={styles.containerComments}>
@@ -17,6 +17,15 @@ export default function index({ data }) {
           {data.comentario}
         </Text>
       </View>
+      {data.userId === 1 && (
+        <View style={{ width: 100, alignSelf: "flex-end" }}>
+          <Button
+            color="red"
+            onPress={() => handleDelete(data.id)}
+            title="delete"
+          />
+        </View>
+      )}
     </View>
   );
 }
