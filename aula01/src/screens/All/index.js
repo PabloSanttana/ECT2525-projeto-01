@@ -7,6 +7,7 @@ import {
   TouchableOpacity,
 } from "react-native";
 import { AntDesign } from "@expo/vector-icons";
+import { AdMobInterstitial } from "expo-ads-admob";
 
 import Card from "../../components/card_all";
 import styles from "./styles";
@@ -43,7 +44,20 @@ export default function index() {
       .catch((error) => {
         console.log(error);
       });
+    load();
   }, []);
+
+  async function load() {
+    await AdMobInterstitial.setAdUnitID(
+      "ca-app-pub-3940256099942544/1033173712"
+    );
+    startInsterstial();
+  }
+
+  async function startInsterstial() {
+    await AdMobInterstitial.requestAdAsync({ servePersonalizedAds: true });
+    await AdMobInterstitial.showAdAsync();
+  }
 
   return (
     <View style={styles.container}>
